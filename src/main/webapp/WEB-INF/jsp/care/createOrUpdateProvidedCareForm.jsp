@@ -14,8 +14,9 @@
         <form:form modelAttribute="providedCare" class="form-horizontal" id="add-feeding-form">
             <div class="form-group has-feedback">
                 
-                
-                <petclinic:inputField label="Duration" name="duration"/>
+                <petclinic:inputField label="Name" name="name"/>
+                <petclinic:inputField label="Description" name="description"/>
+                <petclinic:inputField label="Compatible_pet_types" name = "compatible_pet_types"/>
               
                 <div class="control-group">
                     <petclinic:selectField name="care" label="Care" names="${cares}" size="1"/>

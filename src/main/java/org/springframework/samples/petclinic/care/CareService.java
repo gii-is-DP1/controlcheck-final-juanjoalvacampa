@@ -2,6 +2,8 @@ package org.springframework.samples.petclinic.care;
 
 import java.util.List;
 
+import javax.validation.Valid;
+
 
 
 public class CareService {    
@@ -19,7 +21,7 @@ public class CareService {
     }
 
     
-    public CareProvision save(CareProvision p) throws NonCompatibleCaresException, UnfeasibleCareException {
+    public CareProvision save(@Valid Care care) throws NonCompatibleCaresException, UnfeasibleCareException {
         return null;   
     }
 
